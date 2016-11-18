@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+#info, #file {
+    padding: 1em;
+    width: 49%;
+    width: calc(50% - 2px);
+    box-sizing: border-box;
+    height: 100%;
+    height: calc(100% - 5px);
+    margin: 0;
+    float: left;
+}
+
+#file {
+    float: right;
+}
+
+h1 {
+    margin: 0.1em 0;
+}
+
+@media screen and (max-width: 800px) {
+    #info, #file {
+        float: none;
+        width: 100%;
+    }
+}

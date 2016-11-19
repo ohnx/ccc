@@ -50,7 +50,7 @@ var initCB = function(j) {
 var fetchFileA = function(j) {
     var block = document.getElementById("file-contents");
     block.innerHTML = j.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    hljs.highlightBlock(block);
+    Prism.highlightElement(block);
 };
 
 (function() {
